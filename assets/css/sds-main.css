@@ -1,0 +1,87 @@
+@import "modules/sds-variables.css";
+@import "modules/sds-header.css";
+@import "modules/sds-home.css";
+@import "modules/sds-contact.css";
+@import "modules/sds-staff.css";
+@import "modules/sds-footer.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--textColor);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2 {
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+}
+
+.container-grid {
+    display: grid;
+    grid:
+    "header" 0px
+    "main" 1fr
+    "footer" 70px
+    /100vw;
+    height: 100vh;
+}
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 425px) {
+
+    .container-grid {
+        display: grid;
+        grid:
+    "header" 0px
+    "main" 1fr
+    "footer" 100px
+    /100vw;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .container-grid {
+        display: grid;
+        grid:
+    "header" 0px
+    "main" 1fr
+    "footer" 70px
+    /1fr;
+        height: 100vh;
+        margin: auto;
+    }
+
+    textarea{
+        height: 18rem;
+    }
+}

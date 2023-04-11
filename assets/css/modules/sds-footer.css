@@ -1,0 +1,228 @@
+
+footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+}
+footer a{
+    text-decoration: none;
+    line-height: 15px;
+    color: black;
+}
+
+
+/*Icone */
+.iconeCircle {
+    width: 45px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: var(--secondaryColor);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.iconeCircle a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+svg{
+    width: 35px;
+    height: 35px;
+}
+
+
+/*Icone address*/
+.address{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+address{
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    width: 0;
+    -webkit-transition: width 0.5s ease-out;
+    -o-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-out;
+}
+
+/*Icon Phone*/
+.tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/*Icon network*/
+.socialnetwork {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    z-index: 2;
+}
+
+.container-iconeCircle {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+.socialnetwork:hover .circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: width 0.5s ease-out;
+    -o-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-out;
+}
+
+/*correction for icon phone*/
+.tel svg{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/**/
+/*animation of socialNetwork icon*/
+/**/
+
+#facebook{
+    background-color: #3b5998;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    transition: -webkit-transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+#twitter{
+    background-color: #00acee;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    transition: -webkit-transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+#insta{
+    background: -o-linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    transition: -webkit-transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+#tiktok{
+    background: -webkit-gradient(linear, left top, right top, from(#69c9d0), to(#ee1d52));
+    background: -o-linear-gradient(left, #69c9d0, #ee1d52);
+    background: linear-gradient(90deg, #69c9d0, #ee1d52);
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    transition: -webkit-transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+.socialnetwork:hover .container-iconeCircle:hover #facebook{
+    -webkit-transform: translateY(-180px);
+    -ms-transform: translateY(-180px);
+    transform: translateY(-180px);
+    -webkit-transition:  1s ease-out;
+    -o-transition:  1s ease-out;
+    transition:  1s ease-out;
+}
+.socialnetwork:hover .container-iconeCircle:hover   #twitter{
+    -webkit-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    transform: translateY(-90px);
+    -webkit-transition:  1s ease-out;
+    -o-transition:  1s ease-out;
+    transition:  1s ease-out;
+}
+.socialnetwork:hover .container-iconeCircle:hover   #insta{
+    -webkit-transform: translateY(-135px);
+    -ms-transform: translateY(-135px);
+    transform: translateY(-135px);
+    -webkit-transition:  1s ease-out;
+    -o-transition:  1s ease-out;
+    transition:  1s ease-out;
+}
+.socialnetwork:hover .container-iconeCircle:hover   #tiktok{
+    -webkit-transform: translateY(-45px);
+    -ms-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-transition:  1s ease-out;
+    -o-transition:  1s ease-out;
+    transition:  1s ease-out;
+}
+
+.external-link{
+    display: none;
+}
+.footer-contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px){
+    .external-link{
+        display: initial;
+    }
+    .part-of-footer{
+        width: 33%;
+    }
+    .external-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .external-link p {
+        text-align: center;
+    }
+    .external-link a {
+        text-align: center;
+    }
+}
+

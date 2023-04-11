@@ -1,0 +1,166 @@
+.main-contact {
+    height: 100%;
+    width: 100%;
+   margin-bottom: 2rem;
+    margin-top: 80px;
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+/*Partie formulaire*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 90%;
+}
+
+
+.input {
+    width: 100%;
+    margin: 0.5rem 0;
+    border: none;
+    background: var(--secondaryColor);
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    padding: 0.5rem;
+}
+
+.textarea {
+    resize: none;
+}
+
+.submit {
+    width: 20%;
+    min-width: min-content;
+    cursor: pointer;
+    color: var(--textColor);
+    margin-bottom: 3rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*Boite de dialogue */
+
+.box {
+    display: none;
+    padding-top: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialogBox {
+    margin: auto;
+    background-color: var(--secondaryColor);
+    width: 70%;
+    border: 2px solid black;
+}
+
+.dialogBox-title {
+    display: flex;
+    padding: 0 2rem;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    border-bottom: 2px solid black;
+}
+
+.close {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    position: absolute;
+    right: 0;
+}
+
+/* animation de la boite de dialogue */
+
+.anim-haut {
+    position: relative;
+    animation: top 1s;
+}
+
+@keyframes top {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+/*Partie Adresse*/
+
+.container-adress{
+    margin-bottom: 2rem;
+}
+iframe {
+
+    width: 100%;
+    box-shadow: var(--boxShadow);
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 425px) {
+
+    .main-contact{
+        margin-top: 100px;
+    }
+    .info {
+        width: 40%;
+    }
+
+    .container-adress {
+        display: flex;
+        width: 80%;
+    }
+
+    iframe {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+
+    .main-contact{
+        margin-top: 150px;
+        height: auto;
+    }
+
+    .main-contact h2{
+        margin: 2rem 0 4rem 0;
+    }
+
+    .info {
+    width: 30%;
+    }
+    .container-contact{
+        flex-direction: row-reverse;
+
+    }
+    .container-adress{
+        margin-right: 1rem;
+    }
+
+    .dialogBox{
+        width: 30%;
+    }
+}

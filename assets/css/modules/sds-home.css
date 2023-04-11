@@ -1,0 +1,155 @@
+/*Main*/
+.imgbackground {
+    width: 100vw;
+    height:250px;
+    z-index: -1;
+}
+
+/* Article */
+
+h1 {
+    color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.image-article {
+    width: 100%;
+    height: 300px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.content h2{
+    margin-bottom: 1rem;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.article p:first-of-type {
+    padding-bottom: 1rem;
+}
+.article p:last-child{
+    display: none;
+}
+/* Section */
+
+.experienceTitle {
+    margin-bottom: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem;
+    align-items: center;
+}
+
+.card-home{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondaryColor);
+    padding: 0.5rem;
+    justify-content: center;
+    border-radius: var(--Bradius);
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.photo {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.text {
+    color: var(--textColor);
+    line-height: 0.8rem;
+    font-size: small;
+}
+/*Card n°3 et 4 display-none sur mobile*/
+
+.card-home3{
+    display: none;
+} 
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+
+    article{
+        width: 80%;
+        margin: auto;
+    }
+
+    .image-article {
+        height: 300%;
+        margin-right: 20px;
+        width: 300%;
+    }
+    article{
+        width: 80%;
+        margin: auto;
+    }
+    .article {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 1rem;
+        width: 100%;
+        margin: auto;
+    }
+    .article p {
+        display: block;
+       margin-top: 10px;
+    }
+    .article p:last-child{
+        display: initial;
+    }
+    .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    }
+    .card-home{
+    display: flex;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    border-radius: var(--Bradius);
+    width: 100%;
+    }
+    .imgbackground {
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+    }
+    .card-home3{
+    display: flex;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    border-radius: var(--Bradius);
+    width: 100%;
+    }
+    .ccontent{
+        justify-content: center;
+    }
+  }
+
+
+
+ 
+ 
+
